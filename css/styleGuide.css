@@ -5,8 +5,11 @@
 }
 
 body{
-	padding: 2rem;
 	background-color: #060c21;
+}
+
+div.wrap{
+	padding: 2rem;
 }
 
 section#interactive_elements, section#text_elements, section#portfolio_ideas, 
@@ -103,9 +106,43 @@ h4{
 	color: #fff;
 }
 
-p,li{
+p,li,a{
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
+}
+
+
+
+/*STYLING FOR DESKTOP HEADER*/
+header{
+	width: 70%;
+	margin: auto;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h2{
+	color: #fff;
+	text-shadow: 0 0 0.5rem #fff,
+				 0 0 1rem #fff,
+				 0 0 1.5rem #fff,
+				 0 0 2rem #fff;
+}
+
+header a{
+	text-decoration: none;
+}
+
+nav.menu{
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header a.navBtn{
+	border: none;
 }
 
 
@@ -322,8 +359,7 @@ div.othercolor{
 
 div.white{
 	background-color: #fff;
-	box-shadow: 0 0 1rem #fff,
-	            0 0 4rem #fff;
+	box-shadow: 0 0 2rem #fff;
 }
 
 div.white p{
@@ -332,14 +368,12 @@ div.white p{
 
 div.pink{
 	background-color: #E84994;
-	box-shadow: 0 0 1rem #E84994,
-	            0 0 4rem #E84994;
+	box-shadow: 0 0 2rem #E84994;
 }
 
 div.blue{
 	background-color: #02C8ED;
-	box-shadow: 0 0 1rem #02C8ED,
-	            0 0 4rem #02C8ED;
+	box-shadow: 0 0 2rem #02C8ED;
 }
 
 

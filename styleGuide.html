@@ -18,315 +18,336 @@
 </head>
 <body>
 
-	<!-- INTERACTIVE ELEMENTS SECTION // -->
-	<section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+	<!-- code for laptop version header -->
+	<header>
+		<div class="logo">
+			<h2>Game Developer</h2>
+		</div>
 
-      <!-- In-text link styling section -->
-      <section class="element">
-        <h3>In-text link</h3>
+		<nav class="menu">
+	        <div class="menu_item"><a href="home.html" class="textLink">Home</a></div>
+	        <div class="menu_item"><a href="portfolio.html" class="textLink">Portfolio</a></div>
+	        <div class="menu_item"><a href="bio.html" class="textLink">About</a></div>
+	    </nav>
 
-        <div class="element_content">
-          <h4>CSS selector</h4>
-          <p>a.textLink</p>
-
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>&lt;p&gt;This is an &lt;a href="#" class="textLink"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code>
-          </div>
-
-          <h4>Rendered element:</h4>
-          <p>This is an <a href="#" class="textLink">in-text link</a>.</p>
-        </div>
-        
-      </section>
+		<div class="contact">
+			<a href="contact.html" class="navBtn">Contact Me</a>
+		</div>
+	</header>
 
 
-      <!-- Default Button styling section -->
-      <section class="element">
-        <h3>Navigation Link</h3>
 
-        <div class="element_content">
+	<div class="wrap">
+		<!-- INTERACTIVE ELEMENTS SECTION // -->
+		<section id="interactive_elements">
+	      <h2>Interactive Elements</h2>
 
-          <h4>CSS selector:</h4>
-          <p>a.navBtn</p>
+	      <!-- In-text link styling section -->
+	      <section class="element">
+	        <h3>In-text link</h3>
 
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>
-	            &lt;div class="button_container"&gt; <br>&nbsp;
-	              &lt;a href="#interactive_elements" class="navBtn">Defualt Button&lt;/a&gt; <br>
-	            &lt;/div&gt;
-	        </code>
-          </div>
+	        <div class="element_content">
+	          <h4>CSS selector</h4>
+	          <p>a.textLink</p>
 
-          <h4>Rendered element:</h4>
-          <div class="button_container">
-            <a href="#interactive_elements" class="navBtn">Defualt Button</a>
-          </div>
-        </div>
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>&lt;p&gt;This is an &lt;a href="#" class="textLink"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code>
+	          </div>
 
-      </section>
-
-
-      <!-- Submit/Reset Button section -->
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>a.resBtn</p>
-
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>
-	            &lt;div class="button_container"&gt; <br>&nbsp;
-	              &lt;a href="#interactive_elements" class="button_subres">Submit / Reset&lt;/a&gt; <br>
-	            &lt;/div&gt;
-	          </code>
-          </div>
-
-          <h4>Rendered element</h4>
-          <div class="button_container">
-            <a href="#interactive_elements" class="resBtn">
-            	<span></span>
-            	<span></span>
-            	<span></span>
-            	<span></span>
-            	Submit / Reset
-        	</a>
-          </div>
-        </div>
-        
-      </section>
+	          <h4>Rendered element:</h4>
+	          <p>This is an <a href="#" class="textLink">in-text link</a>.</p>
+	        </div>
+	        
+	      </section>
 
 
-      <!-- Text input and label section -->
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
+	      <!-- Default Button styling section -->
+	      <section class="element">
+	        <h3>Navigation Link</h3>
 
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>#text_input</p>
+	        <div class="element_content">
 
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>&lt;label for="text_input"&gt;Input:&lt;/label&gt;<br>
-	        &lt;input type="text" id="text_input" name="text_input"&gt;</code>
-          </div>
+	          <h4>CSS selector:</h4>
+	          <p>a.navBtn</p>
 
-          <h4>Rendered element:</h4>
-          <label for="text_input">Text Input:</label>
-          <input type="text" id="text_input" name="text_input">
-        </div>
-        
-      </section>
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>
+		            &lt;div class="button_container"&gt; <br>&nbsp;
+		              &lt;a href="#interactive_elements" class="navBtn">Defualt Button&lt;/a&gt; <br>
+		            &lt;/div&gt;
+		        </code>
+	          </div>
+
+	          <h4>Rendered element:</h4>
+	          <div class="button_container">
+	            <a href="#interactive_elements" class="navBtn">Defualt Button</a>
+	          </div>
+	        </div>
+
+	      </section>
 
 
-      <!-- Image link section -->
-      <section class="element">
-        <h3>Image as a Link</h3>
+	      <!-- Submit/Reset Button section -->
+	      <section class="element">
+	        <h3>Submit/Reset Buttons</h3>
 
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>.imgLink</p>
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>a.resBtn</p>
 
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>&lt;a href="#" class="imgLink"&gt;&lt;img src="images/image_link.png" alt="an image of old tv as a link"&gt;&lt;/a&gt;</code>
-          </div>
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>
+		            &lt;div class="button_container"&gt; <br>&nbsp;
+		              &lt;a href="#interactive_elements" class="button_subres">Submit / Reset&lt;/a&gt; <br>
+		            &lt;/div&gt;
+		          </code>
+	          </div>
 
-          <h4>Rendered element:</h4>
-	      <div class="imgBox">
-		      <div>
-		      	<a href="#" class="imgLink">
-		          	<img src="images/infoGraphic_h.png" alt="an image as a link">
-		        </a>
+	          <h4>Rendered element</h4>
+	          <div class="button_container">
+	            <a href="#interactive_elements" class="resBtn">
+	            	<span></span>
+	            	<span></span>
+	            	<span></span>
+	            	<span></span>
+	            	Submit / Reset
+	        	</a>
+	          </div>
+	        </div>
+	        
+	      </section>
+
+
+	      <!-- Text input and label section -->
+	      <section class="element">
+	        <h3>Text Input Field with Label</h3>
+
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>#text_input</p>
+
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>&lt;label for="text_input"&gt;Input:&lt;/label&gt;<br>
+		        &lt;input type="text" id="text_input" name="text_input"&gt;</code>
+	          </div>
+
+	          <h4>Rendered element:</h4>
+	          <label for="text_input">Text Input:</label>
+	          <input type="text" id="text_input" name="text_input">
+	        </div>
+	        
+	      </section>
+
+
+	      <!-- Image link section -->
+	      <section class="element">
+	        <h3>Image as a Link</h3>
+
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>.imgLink</p>
+
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>&lt;a href="#" class="imgLink"&gt;&lt;img src="images/image_link.png" alt="an image of old tv as a link"&gt;&lt;/a&gt;</code>
+	          </div>
+
+	          <h4>Rendered element:</h4>
+		      <div class="imgBox">
+			      <div>
+			      	<a href="#" class="imgLink">
+			          	<img src="images/infoGraphic_h.png" alt="an image as a link">
+			        </a>
+			      </div>
 		      </div>
-	      </div>
-        </div>
+	        </div>
 
-      </section>
+	      </section>
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-  	<!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <!-- 4 levels of heading section -->
-      <section class="element">
-        <h3>Headings</h3>
-
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>h1.level1<br>h2.level2<br>h3.level3<br>h4.level4</p>
-
-          <h4>Sample code:</h4>
-	      <div class="codeBox">
-	      	<code>
-	            &lt;h1 class="level1"&gt;Main Title&lt;/h1&gt; <br>
-	            &lt;h2 class="level2"&gt;Sub Main Title&lt;/h2&gt; <br>
-	            &lt;h3 class="level3"&gt;Section Title&lt;/h3&gt; <br>
-	            &lt;h4 class="level4"&gt;Sub Section Title&lt;/h4&gt;
-	        </code>
-	      </div>
-
-          <h4>Rendered element:</h4>
-          <h1 class="level1">Main Title</h1>
-          <h2 class="level2">Sub Main Title</h2>
-          <h3 class="level3">Section Title</h3>
-          <h4 class="level4">Sub Section Title</h4>
-        </div>
-        
-      </section>
-
-
-      <!-- Paragraphs section -->
-      <section class="element">
-        <h3>Paragraphs</h3>
-
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>.main_text</p>
-
-          <h4>Sample code:</h4>
-          <div class="codeBox">
-          	<code>&lt;p class="main_text"&gt;Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:&lt;/p&gt;</code>
-          </div>
-
-          <h4>Rendered element:</h4>
-          <p class="main_text">Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:</p>
-        </div>
-        
-      </section>
-
-
-      <!-- Numbered list section -->
-      <section class="element">
-        <h3>Numbered Lists</h3>
-
-        <div class="element_content">
-          <h4>CSS selector:</h4>
-          <p>.ordered_list</p>
-
-          <h4>Sample code:</h4>
-	      <div class="codeBox">
-	      	<code>
-	            &lt;ol class="ordered_list"&gt; <br>&nbsp;
-	              &lt;li&gt;Graphic Design&lt;/li&gt; <br>&nbsp;
-	              &lt;li&gt;Interface Design&lt;/li&gt; <br>&nbsp;
-	              &lt;li&gt;Programing: java, python&lt;/li&gt; <br>&nbsp;
-	              &lt;li&gt;Film Editing&lt;/li&gt; <br>
-	            &lt;/ol&gt;
-	        </code>
-	      </div>
-
-          <h4>Rendered element:</h4>
-          <ol class="ordered_list">
-            <li>Graphic Design</li>
-            <li>Interface Design</li>
-            <li>Programing: java, python</li>
-            <li>Film Editing</li>
-          </ol>
-        </div>
-        
-      </section>
-
-  	</section>
-  	<!-- // TEXT ELEMENTS SECTION -->
-
-
-  	<!-- PORTFOLIO IDEAS SECTION // -->
-  	<section id="portfolio_ideas">
-      <h2>Basic Portfolio Ideas</h2>
-
-      <section class="element">
-        <h3>Who do you want to work for?</h3>
-        <p> - I would like to work for a game studio that makes indie games.</p>
-      </section>
-
-      <section class="element">
-        <h3>What kinds of work might you be interested in doing?</h3>
-        <p> - Game interface design, character modeling or character design.</p>
-      </section>
-
-      <section class="element">
-        <h3>Who is the audience for your portfolio?</h3>
-        <p> - Employers of game company that looking for designers.</p>
-      </section>
-
-      <section class="element">
-        <h3>What about the company interests you most?</h3>
-        <p> - Nintendo, red candle and mango studio.</p>
-      </section>
-
-    </section>
-    <!-- // PORTFOLIO IDEAS SECTION -->
+	    </section>
+	    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-    <!-- PORTFOLIO COMPONENTS SECTION // -->
-    <section id="portfolio_coms">
-      <h2>Branding Components</h2>
+	  	<!-- TEXT ELEMENTS SECTION // -->
+	    <section id="text_elements">
+	      <h2>Text Elements</h2>
 
-      <section class="element">
-        <h3>Fonts</h3>
+	      <!-- 4 levels of heading section -->
+	      <section class="element">
+	        <h3>Headings</h3>
 
-        <div class="element_content">
-          <p>Font-family: 'Josefin Sans', sans-serif.</p>
-        </div>
-      </section>
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>h1.level1<br>h2.level2<br>h3.level3<br>h4.level4</p>
 
+	          <h4>Sample code:</h4>
+		      <div class="codeBox">
+		      	<code>
+		            &lt;h1 class="level1"&gt;Main Title&lt;/h1&gt; <br>
+		            &lt;h2 class="level2"&gt;Sub Main Title&lt;/h2&gt; <br>
+		            &lt;h3 class="level3"&gt;Section Title&lt;/h3&gt; <br>
+		            &lt;h4 class="level4"&gt;Sub Section Title&lt;/h4&gt;
+		        </code>
+		      </div>
 
-      <section class="element">
-        <h3>Colour palettes</h3>
-
-        <div class="element_content">
-          <div class="bkcolor">
-            <p>Background colour #060c21</p>
-          </div>
-
-          <div class="othercolor white">
-            <p>Main title & main text #fff</p>
-          </div>
-
-          <div class="othercolor pink">
-            <p>Section title color #E84994</p>
-          </div>
-
-          <div class="othercolor blue">
-            <p>Sub title color #02C8ED</p>
-          </div>
-
-        </div>
-      </section>
-
-    </section>
-    <!-- // PORTFOLIO COMPONENTS SECTION -->
+	          <h4>Rendered element:</h4>
+	          <h1 class="level1">Main Title</h1>
+	          <h2 class="level2">Sub Main Title</h2>
+	          <h3 class="level3">Section Title</h3>
+	          <h4 class="level4">Sub Section Title</h4>
+	        </div>
+	        
+	      </section>
 
 
+	      <!-- Paragraphs section -->
+	      <section class="element">
+	        <h3>Paragraphs</h3>
 
-    <!--  CITATION SECTION // -->
-    <section id="citations">
-      <h2>Citations</h2>
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>.main_text</p>
 
-      <section class="element">
-        <ul>
-          <li>Orozco, Santiago. Designer. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom">https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom</a></li>
-          <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-          <li>W3School. <strong>How To - Checkout Form</strong>. Retrived from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a></li>
-          <li>Youtube. <strong>How to make neon button</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=ex7jGbyFgpA">https://www.youtube.com/watch?v=ex7jGbyFgpA</a>.</li>
-          <li>Youtube. <strong>How to make glowing border</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=t7dWFUggkno">https://www.youtube.com/watch?v=t7dWFUggkno</a>.</li>
-          <li>Youtube. <strong>How to make glowing text</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=I_RhD99rR0c">https://www.youtube.com/watch?v=I_RhD99rR0c</a>.</li>
-        </ul>
-      </section>
+	          <h4>Sample code:</h4>
+	          <div class="codeBox">
+	          	<code>&lt;p class="main_text"&gt;Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:&lt;/p&gt;</code>
+	          </div>
 
-    </section>
-    <!-- // CITATION SECTION -->
+	          <h4>Rendered element:</h4>
+	          <p class="main_text">Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:</p>
+	        </div>
+	        
+	      </section>
+
+
+	      <!-- Numbered list section -->
+	      <section class="element">
+	        <h3>Numbered Lists</h3>
+
+	        <div class="element_content">
+	          <h4>CSS selector:</h4>
+	          <p>.ordered_list</p>
+
+	          <h4>Sample code:</h4>
+		      <div class="codeBox">
+		      	<code>
+		            &lt;ol class="ordered_list"&gt; <br>&nbsp;
+		              &lt;li&gt;Graphic Design&lt;/li&gt; <br>&nbsp;
+		              &lt;li&gt;Interface Design&lt;/li&gt; <br>&nbsp;
+		              &lt;li&gt;Programing: java, python&lt;/li&gt; <br>&nbsp;
+		              &lt;li&gt;Film Editing&lt;/li&gt; <br>
+		            &lt;/ol&gt;
+		        </code>
+		      </div>
+
+	          <h4>Rendered element:</h4>
+	          <ol class="ordered_list">
+	            <li>Graphic Design</li>
+	            <li>Interface Design</li>
+	            <li>Programing: java, python</li>
+	            <li>Film Editing</li>
+	          </ol>
+	        </div>
+	        
+	      </section>
+
+	  	</section>
+	  	<!-- // TEXT ELEMENTS SECTION -->
+
+
+	  	<!-- PORTFOLIO IDEAS SECTION // -->
+	  	<section id="portfolio_ideas">
+	      <h2>Basic Portfolio Ideas</h2>
+
+	      <section class="element">
+	        <h3>Who do you want to work for?</h3>
+	        <p> - I would like to work for a game studio that makes indie games.</p>
+	      </section>
+
+	      <section class="element">
+	        <h3>What kinds of work might you be interested in doing?</h3>
+	        <p> - Game interface design, character modeling or character design.</p>
+	      </section>
+
+	      <section class="element">
+	        <h3>Who is the audience for your portfolio?</h3>
+	        <p> - Employers of game company that looking for designers.</p>
+	      </section>
+
+	      <section class="element">
+	        <h3>What about the company interests you most?</h3>
+	        <p> - Nintendo, red candle and mango studio.</p>
+	      </section>
+
+	    </section>
+	    <!-- // PORTFOLIO IDEAS SECTION -->
+
+
+
+	    <!-- PORTFOLIO COMPONENTS SECTION // -->
+	    <section id="portfolio_coms">
+	      <h2>Branding Components</h2>
+
+	      <section class="element">
+	        <h3>Fonts</h3>
+
+	        <div class="element_content">
+	          <p>Font-family: 'Josefin Sans', sans-serif.</p>
+	        </div>
+	      </section>
+
+
+	      <section class="element">
+	        <h3>Colour palettes</h3>
+
+	        <div class="element_content">
+	          <div class="bkcolor">
+	            <p>Background colour #060c21</p>
+	          </div>
+
+	          <div class="othercolor white">
+	            <p>Main title & main text #fff</p>
+	          </div>
+
+	          <div class="othercolor pink">
+	            <p>Section title color #E84994</p>
+	          </div>
+
+	          <div class="othercolor blue">
+	            <p>Sub title color #02C8ED</p>
+	          </div>
+
+	        </div>
+	      </section>
+
+	    </section>
+	    <!-- // PORTFOLIO COMPONENTS SECTION -->
+
+
+
+	    <!--  CITATION SECTION // -->
+	    <section id="citations">
+	      <h2>Citations</h2>
+
+	      <section class="element">
+	        <ul>
+	          <li>Orozco, Santiago. Designer. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom">https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom</a></li>
+	          <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+	          <li>W3School. <strong>How To - Checkout Form</strong>. Retrived from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a></li>
+	          <li>Youtube. <strong>How to make neon button</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=ex7jGbyFgpA">https://www.youtube.com/watch?v=ex7jGbyFgpA</a>.</li>
+	          <li>Youtube. <strong>How to make glowing border</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=t7dWFUggkno">https://www.youtube.com/watch?v=t7dWFUggkno</a>.</li>
+	          <li>Youtube. <strong>How to make glowing text</strong>. Retrieved from <a href="https://www.youtube.com/watch?v=I_RhD99rR0c">https://www.youtube.com/watch?v=I_RhD99rR0c</a>.</li>
+	        </ul>
+	      </section>
+
+	    </section>
+	    <!-- // CITATION SECTION -->
+	</div>
 
 	
 </body>

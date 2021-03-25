@@ -1,0 +1,69 @@
+/*STYLING FOR DESKTOP HEADER*/
+body{
+	padding: 0;
+}
+
+header{
+	width: 70%;
+	margin: auto;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h2{
+	color: #fff;
+	text-shadow: 0 0 0.5rem #fff,
+				 0 0 1rem #fff,
+				 0 0 1.5rem #fff,
+				 0 0 2rem #fff;
+}
+
+header a{
+	text-decoration: none;
+}
+
+nav.menu{
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header a.navBtn{
+	border: none;
+}
+
+
+
+/*STYLING FOR HOME PAGE CONTENT*/
+section.home_content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	margin: auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+section.home_content h1{
+	text-shadow: none;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+section.home_content a.navBtn:hover{
+	background: #E84994;
+	box-shadow: 0 0 1rem #E84994,
+	            0 0 4rem #E84994,
+	            0 0 8rem #E84994;
+}
+
+div.left, div.right{
+	width: 45%;
+}
+
+div.right img{
+	width: 100%;
+}
