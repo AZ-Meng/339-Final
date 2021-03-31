@@ -386,3 +386,18 @@ li a{
 li{
 	margin: 0.5rem 0;
 }
+
+
+
+/*STYLING FOR DESKTOP FOOTER*/
+footer{
+	margin-top: 10rem;
+}
+
+footer div{
+	width: 100%;
+}
+
+footer div h4, footer div p{
+	text-align: center;
+}
