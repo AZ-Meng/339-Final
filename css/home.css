@@ -265,7 +265,7 @@ section.portfolio div.box:nth-child(3):after{
 	background: linear-gradient(315deg, #4dff03, #00d0ff)
 }
 
-div.box span{
+div.box span.bk{
 	position: absolute;
 	top: 5px;
 	left: 5px;
@@ -291,119 +291,104 @@ div.box div.description p{
 	line-height: 120%;
 }
 
+div.box div.description a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*div.box div.description a{
+	position: absolute;
+	padding: 1em 2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+div.box div.description a:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+div.description a span:nth-child(1){
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 2px;
+ 	background: linear-gradient(to right, #0c002b, #1779ff);
+ 	animation: animate1 2s linear infinite;
+  	animation-delay: 1s;
+}
+@keyframes animate1{
+  	0%{
+    	transform: translateX(-100%);
+  	}
+  	100%{
+    	transform: translateX(100%);
+  	}
+}
+
+div.description a span:nth-child(2){
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	width: 2px;
+  	height: 100%;
+  	background: linear-gradient(to bottom, #0c002b, #1779ff);
+  	animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2{
+  	0%{
+    	transform: translateY(-100%);
+  	}
+  	100%{
+    	transform: translateY(100%);
+  	}
+}
+
+div.description a span:nth-child(3){
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 2px;
+  	background: linear-gradient(to left, #0c002b, #1779ff);
+  	animation: animate3 2s linear infinite;
+  	animation-delay: 1s;
+}
+@keyframes animate3{
+  	0%{
+    	transform: translateX(100%);
+  	}
+  	100%{
+    	transform: translateX(-100%);
+  	}
+}
+
+div.description a span:nth-child(4){
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 2px;
+  	height: 100%;
+  	background: linear-gradient(to top, #0c002b, #1779ff);
+  	animation: animate4 2s linear infinite;
+}
+@keyframes animate4{
+  	0%{
+    	transform: translateY(100%);
+  	}
+  	100%{
+    	transform: translateY(-100%);
+  	}
+}*/
+
+
 /*div.box h2, div.box p, div.box a{
 	border: 1px solid white;
 }*/
 
 
-/*styling for home_content part*/
-section.home_content{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 70%;
-	margin: auto;
-	margin-top: 5rem;
-	margin-bottom: 20vw;
-}
 
-section.home_content h1{
-	text-shadow: none;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-section.home_content a.navBtn:hover{
-	background: #E84994;
-	box-shadow: 0 0 1rem #E84994,
-	            0 0 4rem #E84994,
-	            0 0 8rem #E84994;
-}
-
-div.left, div.right{
-	width: 45%;
-}
-
-div.right img{
-	width: 100%;
-}
-
-
-
-
-/*styling for portfolio_content part*/
-section.about_content, section.portfolio_content{
-	display: flex;
-	justify-content: space-between;
-	width: 60%;
-	margin: 20vw auto;
-}
-
-div.preview_part{
-	width: 40%;
-	position: relative;
-}
-
-div.preview_part img{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 3;
-}
-
-div.preview_part div.neonBorder{
-	position: relative;
-	top: -40px;
-	left: -40px;
-	width: 100%;
-	height: 24vw;
-}
-
-div.neonBorder:before{
-	content: '';
-	position: absolute;
-	top: -4px;
-	left: -4px;
-	right: -4px;
-	bottom: -4px;
-	background: #fff;
-	z-index: -1;
-}
-
-div.neonBorder:after{
-	content: '';
-	position: absolute;
-	top: -4px;
-	left: -4px;
-	right: -4px;
-	bottom: -4px;
-	background: #fff;
-	z-index: -2;
-	filter: blur(20px);
-}
-
-div.neonBorder:before, div.neonBorder:after{
-	background: linear-gradient(200deg, #E84994, #060c21, #02C8ED);
-}
-
-div.neonBorder div{
-	width: 100%;
-	height: 100%;
-	background-color: #060c21;
-}
-
-div.text_part{
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: center;
-}
-
-div.text_part p{
-	line-height: 150%;
-}
-
-div.text_part div{
-}
