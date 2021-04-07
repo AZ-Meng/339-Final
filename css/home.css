@@ -1,4 +1,4 @@
-/*/*STYLING FOR HOME PAGE CONTENT*/
+/*STYLING FOR HOME PAGE CONTENT*/
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -37,6 +37,74 @@ section.cover h1{
 	z-index: 100;
 }
 
+section.cover h2{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	writing-mode: vertical-lr;
+	color: #fff;
+	text-shadow: 0 0 0.5rem #fff,
+				 0 0 1rem #fff,
+				 0 0 1.5rem #fff,
+				 0 0 2rem #fff;
+}
+
+section.cover nav{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 5%;
+	height: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+section.cover a{
+	display: block;
+	width: 100%;
+	height: 7%;
+	text-align: center;
+	margin: 0;
+	padding-top: 7px;
+}
+
+section.cover div{
+	width: 50%;
+	height: 39.5%;
+
+}
+
+section.cover nav div.left{
+	border-right: 1px solid white;
+}
+
+section.cover nav div.right{
+	border-left: 1px solid white;
+}
+
+
+
+/*styling for connection part*/
+section.connection{
+	height: 20vh;
+	display: flex;
+	margin: 10vh 0;
+}
+
+section.connection div.left{
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid white;
+}
+
+section.connection div.right{
+	width: 50%;
+	height: 100%;
+	border-left: 1px solid white;
+}
+
 
 
 /*styling for about part*/
@@ -53,7 +121,6 @@ section.about{
 section.about div.title{
 	width: 60%;
 	height: 20vh;
-	border: 1px solid white;
 }
 
 section.about h2{
@@ -92,14 +159,15 @@ section.about h2[data-scroll="in"]:before{
 
 section.about div.content{
 	width: 60%;
-	height: 80vh;
+	height: 50vh;
 }
 
 section.about h3{
 	position: relative;
-	margin: 5px 0 0;
+	margin: 3% 0;
 	padding: 0;
 	display: inline-block;
+	font-size: 2em;
 	transition: 0.5s;
 	transform-origin: right;
 	transform: scaleX(0);
@@ -118,7 +186,7 @@ section.about h3:before{
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	transform-origin: right;
+	transform-origin: left;
 	transition: 0.5s;
 }
 
@@ -126,6 +194,106 @@ section.about h3[data-scroll="in"]:before{
 	transform: scaleX(0);
 	transition-delay: 1s;
 }
+
+section.about p{
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	line-height: 150%;
+	transition: 1s;
+	opacity: 0;
+}
+
+section.about p[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 1s;
+}
+
+
+/*styling for the portfolio part*/
+section.portfolio{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	margin: auto;
+}
+
+section.portfolio div.box{
+	position: relative;
+	width: 27%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	transition: 0.5s;
+}
+
+section.portfolio div.box:hover{
+	transform: translateY(-20px);
+}
+
+section.portfolio div.box:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+section.portfolio div.box:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #ffbc00, #ff0058);
+	filter: blur(30px);
+}
+
+section.portfolio div.box:nth-child(2):before,
+section.portfolio div.box:nth-child(2):after{
+	background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+section.portfolio div.box:nth-child(3):before,
+section.portfolio div.box:nth-child(3):after{
+	background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+div.box span{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	background: rgba(0,0,0,0.7);
+	z-index: 2;
+}
+
+div.box div.description{
+	position: relative;
+	z-index: 10;
+	padding: 10%;
+}
+
+div.box div.description h2{
+	color: #fff;
+	text-shadow: none;
+	font-size: 1.5em;
+	line-height: 120%;
+}
+div.box div.description p{
+	line-height: 120%;
+}
+
+/*div.box h2, div.box p, div.box a{
+	border: 1px solid white;
+}*/
 
 
 /*styling for home_content part*/
@@ -238,4 +406,4 @@ div.text_part p{
 }
 
 div.text_part div{
-}*/
+}
