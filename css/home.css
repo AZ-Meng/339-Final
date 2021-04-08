@@ -216,7 +216,7 @@ section.portfolio{
 	justify-content: space-between;
 	align-items: center;
 	width: 70%;
-	margin: auto;
+	margin: 15% auto;
 }
 
 section.portfolio div.box{
@@ -296,28 +296,79 @@ div.box div.description a{
 	text-transform: uppercase;
 }
 
-/*div.box div.description a{
+
+
+/*styling for contact information part*/
+section.contact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 70%;
+	margin: 15% auto;
+}
+
+section.contact div.full{
+	width: 100%;
+}
+
+section.contact div.left{
+	width: 55%;
+}
+
+section.contact div.left input{
+	display: inline-block;
+	width: 100%;
+	height: 3em;
+	border: none;
+	border-bottom: 0.5px solid white;
+	margin-top: 1em;
+	background-color: rgba(0,0,0,0);
+}
+
+input.massage{
+	padding-top: 1.5em;
+	padding-bottom: 4em;
+	margin-bottom: 2em;
+}
+
+section.contact div.left input::placeholder{
+	padding-left: 2em;
+}
+
+div.btnbox{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.btnbox a{
 	position: absolute;
-	padding: 1em 2em;
-	text-decoration: none;
-	text-transform: uppercase;
-	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-	overflow: hidden;
+  	top: 0;
+  	left: 0;
+  	color: #E84994;
+  	padding: 0.5em 2em;
+  	font-size: 1.5em;
+  	letter-spacing: 2px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  	overflow: hidden;
+  	margin: 0;
 }
 
-div.box div.description a:hover{
-	background-color: #000;
-	color: #fff;
+div.btnbox a:hover{
+  	color: #fff;
 }
 
-div.description a span:nth-child(1){
+div.btnbox a span:nth-child(1){
   	position: absolute;
   	top: 0;
   	left: 0;
   	width: 100%;
   	height: 2px;
- 	background: linear-gradient(to right, #0c002b, #1779ff);
- 	animation: animate1 2s linear infinite;
+  	background: linear-gradient(to right, #E84994, #02C8ED);
+  	animation: animate1 2s linear infinite;
   	animation-delay: 1s;
 }
 @keyframes animate1{
@@ -329,16 +380,15 @@ div.description a span:nth-child(1){
   	}
 }
 
-div.description a span:nth-child(2){
+div.btnbox a span:nth-child(2){
   	position: absolute;
   	top: 0;
   	right: 0;
   	width: 2px;
   	height: 100%;
-  	background: linear-gradient(to bottom, #0c002b, #1779ff);
+  	background: linear-gradient(to bottom, #E84994, #02C8ED);
   	animation: animate2 2s linear infinite;
 }
-
 @keyframes animate2{
   	0%{
     	transform: translateY(-100%);
@@ -348,32 +398,32 @@ div.description a span:nth-child(2){
   	}
 }
 
-div.description a span:nth-child(3){
+div.btnbox a span:nth-child(3){
   	position: absolute;
   	bottom: 0;
   	left: 0;
   	width: 100%;
   	height: 2px;
-  	background: linear-gradient(to left, #0c002b, #1779ff);
+  	background: linear-gradient(to left, #E84994, #02C8ED);
   	animation: animate3 2s linear infinite;
   	animation-delay: 1s;
 }
 @keyframes animate3{
-  	0%{
-    	transform: translateX(100%);
-  	}
-  	100%{
-    	transform: translateX(-100%);
-  	}
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
 
-div.description a span:nth-child(4){
+div.btnbox a span:nth-child(4){
   	position: absolute;
   	top: 0;
   	left: 0;
   	width: 2px;
   	height: 100%;
-  	background: linear-gradient(to top, #0c002b, #1779ff);
+  	background: linear-gradient(to top, #E84994, #02C8ED);
   	animation: animate4 2s linear infinite;
 }
 @keyframes animate4{
@@ -383,12 +433,30 @@ div.description a span:nth-child(4){
   	100%{
     	transform: translateY(-100%);
   	}
-}*/
+}
 
+section.contact div.right{
+	width: 35%;
+}
 
-/*div.box h2, div.box p, div.box a{
-	border: 1px solid white;
-}*/
+section.contact div.right h3{
+	color: #fff;
+	text-shadow: none;
+}
 
+section.contact div.right p{
+	line-height: 120%;
+}
 
+section.contact div.right h4{
+	color: #E84994;
+	text-shadow: 0 0 0.5rem #E84994,
+				 0 0 1rem #E84994,
+				 0 0 1.5rem #E84994,
+				 0 0 2rem #E84994;
+}
+
+section.contact div.right div{
+	margin-bottom: 3em;
+}
 
