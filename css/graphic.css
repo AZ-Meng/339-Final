@@ -36,7 +36,6 @@ section.project_content div.title h2{
 	color: #060c21;
 	-webkit-text-stroke: 0.02em #383d52;
 	text-transform: uppercase;
-	padding-top: 10px;
 }
 
 section.project_content div.title h2:before{
@@ -51,7 +50,6 @@ section.project_content div.title h2:before{
 	border-right: 2px solid #E84994;
 	overflow: hidden;
 	animation: animate 6s linear infinite;
-	padding-top: 10px;
 }
 @keyframes animate{
 	0%, 10%, 100%{
@@ -154,4 +152,21 @@ div.steps div.imgText{
 
 div.imgText img{
 	width: 100%;
+}
+
+
+
+/*styling for responsive layout*/
+@media only screen and (max-width: 800px){
+	p{
+		font-size: 1em;
+	}
+
+	section.project_content{
+		width: 90%;
+	}
+
+	div.steps div.imgText{
+		width: 80%;
+	}
 }
