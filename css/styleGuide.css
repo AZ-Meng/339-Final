@@ -207,6 +207,72 @@ header a.navBtn{
 
 
 
+/*styling for mobile header part*/
+section.mobile_header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #060c21;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+div.displayHeader{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.displayHeader>div{
+	width: 10%;
+}
+
+div.displayHeader img{
+	width: 100%;
+	min-width: 60px;
+}
+
+div.menu img{
+	padding: 0.5rem;
+}
+
+ul#dropDown{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#dropDown>li{
+	list-style: none;
+	margin: 0;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	transition: all 0.5s;
+}
+
+ul#dropDown>li:hover{
+	background-color: #02C8ED;
+	color: white;
+}
+
+ul#dropDown a{
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+}
+
+ul#dropDown a:hover{
+	color: white;
+	font-style: italic;
+}
+
+
+
 /*
 styling for INTERACTIVE ELEMENTS-----------
 */
@@ -460,4 +526,33 @@ footer div{
 
 footer div h4, footer div p{
 	text-align: center;
+}
+
+
+
+/*styling for responsive layout*/
+@media only screen and (max-width: 800px){
+	header{
+		display: none;
+	}
+
+	section.mobile_header{
+		display: block;
+	}
+
+	div.bkcolor, div.othercolor{
+		width: 80%;
+	}
+
+	p{
+		font-size: 1em;
+	}
+
+	section.project_content{
+		width: 90%;
+	}
+
+	div.steps div.imgText{
+		width: 80%;
+	}
 }
