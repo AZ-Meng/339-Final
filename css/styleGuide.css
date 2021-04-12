@@ -196,7 +196,7 @@ header a{
 }
 
 nav.menu{
-	width: 30%;
+	width: 50%;
 	display: flex;
 	justify-content: space-between;
 }
