@@ -14,27 +14,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link href="css/styleGuide.css" rel="stylesheet">
 	<link href="css/home.css" rel="stylesheet">
 </head>
 <body>
-
-	<!-- code for laptop version header -->
-	<!-- <header>
-		<div class="logo">
-			<h2>Interactive Designer</h2>
-		</div>
-
-		<nav class="menu">
-	        <div class="menu_item"><a href="home.html" class="textLink">Home</a></div>
-	        <div class="menu_item"><a href="portfolio.html" class="textLink">Portfolio</a></div>
-	        <div class="menu_item"><a href="bio.html" class="textLink">About</a></div>
-	    </nav>
-
-		<div class="contact">
-			<a href="contact.html" class="navBtn">Contact Me</a>
-		</div>
-	</header> -->
 
 
 	<section class="cover">
@@ -67,6 +51,34 @@
 	</section>
 
 
+	<!-- code for mobile version header -->
+    <section class="mobile_header">
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/logo.png" alt="icon of logo as menu">
+            </div>
+
+        </div>
+
+        <ul id="dropDown">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
+            <li><a href="web.html">WEB DESIGN</a></li>
+            <li><a href="game.html">GAME DEVELOP</a></li>
+            <li><a href="home.html#contact_content">CONTACT ME</a></li>
+        </ul>
+ 
+    </section>
+
+
+    <section class="mobile_cover">
+
+    	<h1 data-aos="fade-right">Hello Guys!<br>This is Meng.</h1>
+    	
+    	<h2 data-aos="fade-left">I am an interactive designer.</h2>
+    </section>
+
+
 	<section class="connection">
 		<div class="left"></div>
 		<div class="right"></div>
@@ -75,7 +87,7 @@
 
 	<section class="about" id="about_content">
 		<div class="title">
-			<h2>HELLO THERE:</h2>
+			<h2 data-aos="flip-left">HELLO THERE:</h2>
 		</div>
 
 		<div class="content">
@@ -155,12 +167,26 @@
 
 
 	<section class="contact" id="contact_content">
-		<div class="full">
+		<div class="full" data-aos="fade-right">
 			<h2>GET IN TOUCH</h2>
 			<p>Feel Free to contact Me Any Time</p>
 		</div>
 
-		<div class="left">
+		<div class="right" data-aos="fade-left">
+			<div>
+				<h3>Let's talk about everything!</h3>
+				<p>If you like my work, feel free to contact me. Here below are my contact no. & work email. Let's talk about what you want, I am ready to create it for you. Thank you.</p>
+			</div>
+
+			<div>
+				<h4>Phone:</h4>
+				<p>(+1)236-833-6039</p>
+				<h4>Email:</h4>
+				<p>mza91@sfu.ca</p>
+			</div>
+		</div>
+
+		<div class="left" data-aos="fade-right">
 			<input type="text" name="name" placeholder="Name">
 			<input type="text" name="email" placeholder="Email">
 			<input type="text" name="subject" placeholder="Subject">
@@ -176,85 +202,8 @@
 			</div>
 		</div>
 
-		<div class="right">
-			<div>
-				<h3>Let's talk about everything!</h3>
-				<p>If you like my work, feel free to contact me. Here below are my contact no. & work email. Let's talk about what you want, I am ready to create it for you. Thank you.</p>
-			</div>
-
-			<div>
-				<h4>Phone:</h4>
-				<p>(+1)236-833-6039</p>
-				<h4>Email:</h4>
-				<p>mza91@sfu.ca</p>
-			</div>
-		</div>
 	</section>
 
-
-	<!-- <section class="home_content">
-		<div class="left">
-			<h1>Hello Guys! <br> I'm Meng.</h1>
-
-			<div class="button_container">
-				<a href="contact.html" class="navBtn">Get Sarted</a>
-			</div>
-		</div>
-
-		<div class="right">
-			<img src="images/portrait.jpg" alt="the picture of myself">
-		</div>
-		
-	</section>
-
-	<section class="about_content">
-		<div class="preview_part">
-			<img src="images/portrait.jpg" alt="the picture of myself">
-
-			<div class="neonBorder">
-				<div></div>
-			</div>
-		</div>
-
-		<div class="text_part">
-			<p>HELLO THERE! My name is Meng Zhao. An Interactive Designer. This is my third year in Simon Fraser University. I am an open-minded, progressive person who is willing to communicate and learn. Hope I can convey my feelings through visual expressions in my interactive works.</p>
-
-			<div class="button_container">
-	            <a href="bio.html" class="resBtn">
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	Learn More
-	        	</a>
-	         </div>
-		</div>
-	</section>
-
-
-	<section class="portfolio_content">
-		<div class="preview_part">
-			<img src="images/portrait.jpg" alt="the picture of myself">
-
-			<div class="neonBorder">
-				<div></div>
-			</div>
-		</div>
-
-		<div class="text_part">
-			<p>HELLO THERE! My name is Meng Zhao. An Interactive Designer. This is my third year in Simon Fraser University. I am an open-minded, progressive person who is willing to communicate and learn. Hope I can convey my feelings through visual expressions in my interactive works.</p>
-
-			<div class="button_container">
-	            <a href="bio.html" class="resBtn">
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	Learn More
-	        	</a>
-	         </div>
-		</div>
-	</section> -->
 
 	<footer>
 		<div>
@@ -273,5 +222,11 @@
 
 	<script src="js/scroll-out.js"></script>
 	<script src="js/home.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	    AOS.init();
+	</script>
+
 </body>
 </html>

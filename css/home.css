@@ -86,11 +86,18 @@ section.cover nav div.right{
 
 
 
+/*styling for mobile cover part*/
+section.mobile_cover{
+	display: none;
+}
+
+
+
 /*styling for connection part*/
 section.connection{
 	height: 20vh;
 	display: flex;
-	margin: 10vh 0;
+	margin: 15vh 0;
 }
 
 section.connection div.left{
@@ -120,7 +127,6 @@ section.about{
 
 section.about div.title{
 	width: 60%;
-	height: 20vh;
 }
 
 section.about h2{
@@ -131,12 +137,12 @@ section.about h2{
 	padding: 0;
 	display: inline-block;
 	font-size: 3em;
-	transition: 0.5s;
+	/*transition: 0.5s;
 	transform-origin: left;
-	transform: scaleX(0);
+	transform: scaleX(0);*/
 }
 
-section.about h2[data-scroll="in"]{
+/*section.about h2[data-scroll="in"]{
 	transform: scaleX(1);
 }
 
@@ -152,10 +158,10 @@ section.about h2:before{
 	transition: 0.5s;
 }
 
-section.about h2[data-scroll="in"]:before{
+section.about div.title h2[data-scroll="in"]:before{
 	transform: scaleX(0);
 	transition-delay: 0.5s;
-}
+}*/
 
 section.about div.content{
 	width: 60%;
@@ -213,7 +219,8 @@ section.about p[data-scroll="in"]{
 /*styling for the portfolio part*/
 section.portfolio{
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	width: 70%;
 	margin: 15% auto;
@@ -222,7 +229,9 @@ section.portfolio{
 section.portfolio div.box{
 	position: relative;
 	width: 27%;
+	min-width: 250px;
 	height: 50vh;
+	margin: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -287,6 +296,7 @@ div.box div.description h2{
 	font-size: 1.5em;
 	line-height: 120%;
 }
+
 div.box div.description p{
 	line-height: 120%;
 }
@@ -301,6 +311,7 @@ div.box div.description a{
 /*styling for contact information part*/
 section.contact{
 	display: flex;
+	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 70%;
@@ -309,6 +320,10 @@ section.contact{
 
 section.contact div.full{
 	width: 100%;
+}
+
+section.contact div.full h2{
+	font-size: 2em;
 }
 
 section.contact div.left{
@@ -460,3 +475,63 @@ section.contact div.right div{
 	margin-bottom: 3em;
 }
 
+
+
+
+/*styling for responsive layout*/
+@media only screen and (max-width: 900px){
+	section.cover{
+		display: none;
+	}
+
+
+	section.mobile_cover{
+		display: block;
+		width: 80%;
+		margin: 15vh auto;
+	}
+
+	section.mobile_cover h1{
+		text-shadow: none;
+		font-size: 60px;
+		font-weight: bold;
+		color: rgba(0,0,0,0);
+		-webkit-text-stroke: 0.2vw #E84994;
+	}
+
+	section.mobile_cover h2{
+		margin-top: 2em;
+		text-align: right;
+		color: #02C8ED;
+		font-size: 1.5em;
+		text-shadow: 0 0 0.5rem #02C8ED,
+					 0 0 1rem #02C8ED,
+					 0 0 1.5rem #02C8ED,
+					 0 0 2rem #02C8ED;
+	}
+
+
+	section.contact div.right, section.contact div.left{
+		width: 100%;
+	}
+
+	section.about div.title, section.about div.content{
+		width: 80%;
+	}
+
+	section.portfolio div.box{
+		width: 70%;
+	}
+}
+
+
+
+@media only screen and (max-width: 500px){
+	section.mobile_cover h1{
+		font-size: 40px;
+	}
+
+	section.mobile_cover h2{
+		font-size: 1em;
+	}
+}

@@ -14,8 +14,8 @@ div.wrap{
 	padding: 2rem;
 }
 
-section#interactive_elements, section#text_elements, section#portfolio_ideas, 
-section#portfolio_coms, section#citation{
+section#interactive_elements, section#text_elements,section#combined_element,
+section#portfolio_ideas, section#portfolio_coms, section#citation{
 	margin: 8rem 0;
 }
 
@@ -221,12 +221,13 @@ section.mobile_header{
 
 div.displayHeader{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
-div.displayHeader>div{
-	width: 10%;
+div.displayHeader>div.menu{
+	width: 12%;
+	min-width: 90px;
 }
 
 div.displayHeader img{
@@ -247,6 +248,7 @@ ul#dropDown{
 ul#dropDown>li{
 	list-style: none;
 	margin: 0;
+	text-align: center;
 	padding-left: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
@@ -254,8 +256,19 @@ ul#dropDown>li{
 }
 
 ul#dropDown>li:hover{
-	background-color: #02C8ED;
 	color: white;
+	font-style: italic;
+}
+
+ul#dropDown>li:nth-child(1):hover,
+ul#dropDown>li:nth-child(3):hover,
+ul#dropDown>li:nth-child(5):hover{
+	background-color: #02C8ED;
+}
+
+ul#dropDown>li:nth-child(2):hover,
+ul#dropDown>li:nth-child(4):hover{
+	background-color: #E84994;
 }
 
 ul#dropDown a{
@@ -268,7 +281,20 @@ ul#dropDown a{
 
 ul#dropDown a:hover{
 	color: white;
-	font-style: italic;
+	/*font-style: italic;*/
+}
+
+
+
+/*styling for style head part*/
+div.styleHead{
+	width: 90%;
+	margin: 15vh auto;
+	margin-bottom: 0;
+}
+
+div.styleHead a{
+	margin-right: 0.5em;
 }
 
 
@@ -320,83 +346,105 @@ a.navBtn:hover{
 
 
 /*submit&reset button part*/
-a.resBtn{
+div.btnbox{
 	position: relative;
-	display: inline-block;
-	padding: 1rem 3rem;
-	margin: 1rem 0;
-	color: #E84994;
-	text-transform: uppercase;
-	letter-spacing: 0.2rem;
-	text-decoration: none;
-	overflow: hidden;
-	transition: color 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10vh;
 }
 
-a.resBtn:hover{
-	border: 2px solid #E84994;
-	transition: 0.25s;
-	transition-delay: 1.25s;
-}
-
-a.resBtn span{
+div.btnbox a{
 	position: absolute;
-	display: block;
+  	top: 0;
+  	left: 0;
+  	color: #E84994;
+  	padding: 0.5em 2em;
+  	font-size: 1.5em;
+  	letter-spacing: 2px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  	overflow: hidden;
+  	margin: 0;
 }
 
-a.resBtn span:nth-child(1){
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, #E84994)
+div.btnbox a:hover{
+  	color: #fff;
 }
 
-a.resBtn:hover span:nth-child(1){
-	left: 100%;
-	transition: 1s;
+div.btnbox a span:nth-child(1){
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 2px;
+  	background: linear-gradient(to right, #E84994, #02C8ED);
+  	animation: animate1 2s linear infinite;
+  	animation-delay: 1s;
+}
+@keyframes animate1{
+  	0%{
+    	transform: translateX(-100%);
+  	}
+  	100%{
+    	transform: translateX(100%);
+  	}
 }
 
-a.resBtn span:nth-child(3){
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(270deg, transparent, #E84994)
+div.btnbox a span:nth-child(2){
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	width: 2px;
+  	height: 100%;
+  	background: linear-gradient(to bottom, #E84994, #02C8ED);
+  	animation: animate2 2s linear infinite;
+}
+@keyframes animate2{
+  	0%{
+    	transform: translateY(-100%);
+  	}
+  	100%{
+    	transform: translateY(100%);
+  	}
 }
 
-a.resBtn:hover span:nth-child(3){
-	right: 100%;
-	transition: 1s;
-	transition-delay: 0.5s;
+div.btnbox a span:nth-child(3){
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 2px;
+  	background: linear-gradient(to left, #E84994, #02C8ED);
+  	animation: animate3 2s linear infinite;
+  	animation-delay: 1s;
+}
+@keyframes animate3{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
 
-a.resBtn span:nth-child(2){
-	top: -100%;
-	right: 0;
-	height: 100%;
-	width: 2px;
-	background: linear-gradient(180deg, transparent, #E84994)
+div.btnbox a span:nth-child(4){
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 2px;
+  	height: 100%;
+  	background: linear-gradient(to top, #E84994, #02C8ED);
+  	animation: animate4 2s linear infinite;
 }
-
-a.resBtn:hover span:nth-child(2){
-	top: 100%;
-	transition: 1s;
-	transition-delay: 0.25s;
-}
-
-a.resBtn span:nth-child(4){
-	bottom: -100%;
-	left: 0;
-	height: 100%;
-	width: 2px;
-	background: linear-gradient(360deg, transparent, #E84994)
-}
-
-a.resBtn:hover span:nth-child(4){
-	bottom: 100%;
-	transition: 1s;
-	transition-delay: 0.75s;
+@keyframes animate4{
+  	0%{
+    	transform: translateY(100%);
+  	}
+  	100%{
+    	transform: translateY(-100%);
+  	}
 }
 
 
@@ -408,6 +456,20 @@ label{
 				 0 0 1rem #fff,
 				 0 0 1.5rem #fff,
 				 0 0 2rem #fff;
+}
+
+input#text_input{
+	display: inline-block;
+	width: 100%;
+	height: 3em;
+	border: none;
+	border-bottom: 0.5px solid white;
+	margin-top: 1em;
+	background-color: rgba(0,0,0,0);
+}
+
+input#text_input::placeholder{
+	padding-left: 2em;
 }
 
 
@@ -459,6 +521,17 @@ a.imgLink img{
 a.imgLink img:hover{
 	transform: scale(1.1);
 }
+
+
+
+/*combined element part*/
+section#combined_element{
+	border: 1px solid white;
+}
+div.element_content header{
+	width: 100%;
+}
+
 
 
 /*branding components part*/
@@ -531,7 +604,7 @@ footer div h4, footer div p{
 
 
 /*styling for responsive layout*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 	header{
 		display: none;
 	}

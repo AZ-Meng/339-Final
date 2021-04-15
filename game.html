@@ -14,9 +14,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link href="css/styleGuide.css" rel="stylesheet">
-	<link href="css/graphic.css" rel="stylesheet">
-	<link href="css/game.css" rel="stylesheet">
+	<link href="css/portfolio.css" rel="stylesheet">
+	<link href="css/detail.css" rel="stylesheet">
 </head>
 <body>
 
@@ -44,19 +45,47 @@
 	</header>
 
 
+
+	<!-- code for mobile version header -->
+    <section class="mobile_header">
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/logo.png" alt="icon of logo as menu">
+            </div>
+
+        </div>
+
+        <ul id="dropDown">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
+            <li><a href="web.html">WEB DESIGN</a></li>
+            <li><a href="game.html">GAME DEVELOP</a></li>
+            <li><a href="home.html#contact_content">CONTACT ME</a></li>
+        </ul>
+ 
+    </section>
+
+
+
 	<section class="project_content">
 		<div class="title">
 			<h2 data-text="Room.Decorator...">Room.Decorator...</h2>
 		</div>
 
 
+		<div class="mobile_title">
+			<h2>Room <br>
+			Decorator</h2>
+		</div>
+
+
 		<div class="display">
-			<div class="overviewImg">
+			<div class="overviewImg game" data-aos="fade-up">
 				<img src="images/gamecover.jpg">
 			</div>
 
 
-			<div class="textBox">
+			<div class="textBox" data-aos="zoom-out">
 				<div class="overviewText">
 					<div>
 						<h3>CONTEXT</h3>
@@ -77,12 +106,12 @@
 						<p>In the brainstorming stage, I write down my initial idea in word instead of code. I create a simple backstory for your game, and outline the effects that need to be achieved.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/process1.png" alt="picture of text process">
 						<p>Idea of background and requirements.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/process2.png" alt="picture of text process">
 						<p>Outline all the creative effect that need to be achieved.</p>
 					</div>
@@ -96,12 +125,12 @@
 						<p>The beginning of coding part, follow the process of decorating a room and create different stages and objects.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/code1.png" alt="pictrue of coding interface">
 						<p>The coding interface of the main program.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/code2.png" alt="pictrue of coding interface">
 						<p>The coding interface of a subclass (object).</p>
 					</div>
@@ -111,17 +140,17 @@
 				<div class="steps">
 					<div class="subtitle">
 						<h3>STEP 3: Draw all the images</h3>
-						<p>All the images of this program is self-created on iPad (app: procreate).</p>
+						<p>All the images of this program is self-created on iPad (APP: Procreate).</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/pictures1.jpg" alt="a screen shot of image files in procreate">
 						<p>Screen shot of image files in procreate.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/pictures2.jpg" alt="screen shot of layer details in one of the imagefile">
-						<p>creen shot of layer details in one of the image file.</p>
+						<p>Screen shot of layer details in one of the image file.</p>
 					</div>
 
 
@@ -134,22 +163,22 @@
 						<p>This is the final stage of the whole project, the main goal of this stage is polishing the code and images, making the workflow more smooth by adding background music and sound effect.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/gamecover.jpg" alt="The starting page of the game">
 						<p>The starting page of the game.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/gameintro.jpg" alt="The introduction page of the game">
 						<p>The introduction page of the game.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/gamelast.jpg" alt="The final stage when player finish decorating the room">
 						<p>The final stage when player finish decorating the room.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/gameend.jpg" alt="The ending page of the game where players can start again">
 						<p>The ending page of the game where players can chose to start again.</p>
 					</div>
@@ -160,14 +189,14 @@
 			</div>
 
 
-			<div class="textBox">
+			<div class="textBox" data-aos="zoom-out">
 				<div class="overviewText">
 					<div>
 						<h3>Goal and Requirements Oriented</h3>
-						<p class="more">When creating a game, it is important to make the workflow smooth and rational, which means there should be appropriate instructions for players so that they will not get lost. When the whole workflow is determined and polished, the next step is to achive these different functions and effects by coding. At last, proper sound effects also help smooth the whole game wrokflow by providing sound feedback in interaction.</p>
+						<p class="more">When creating a game, it is important to <span class="hl">make the workflow smooth and rational</span>, which means there should be appropriate instructions for players so that they will not get lost. When the whole workflow is determined and polished, the next step is to achive these different functions and effects by coding. At last, proper sound effects also help smooth the whole game wrokflow by providing sound feedback in interaction.</p>
 
 						<h3>Designing and Decision</h3>
-						<p>The designing in game development can be divided into two parts, which are interface design and code design. For interface design, it is all about how to help players understand the situation better so that they will not get lost in the game. For code design, it is really important to create a logic, simple and straightforward workflow, which is easier to fix and maintain.</p>
+						<p>The designing in game development can be divided into two parts, which are <span class="hl">interface design</span> and <span class="hl">code design</span>. For interface design, it is all about how to help players understand the situation better so that they will not get lost in the game. For code design, it is really important to create a logic, simple and straightforward workflow, which is easier to fix and maintain.</p>
 					</div>
 				</div>
 			</div>
@@ -187,9 +216,16 @@
 		</div>
 
 		<div>
-			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="#" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
+			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="citation.html" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
 		</div>
 	</footer>
+
+
+	<script src="js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	    AOS.init();
+	</script>
 
 </body>
 </html>

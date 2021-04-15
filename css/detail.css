@@ -1,0 +1,29 @@
+iframe{
+	width: 100%;
+	height: 80vh;
+}
+
+div.display div.overviewImg.game{
+	width: 100%;
+}
+
+section#citations{
+	width: 80%;
+	margin: 20vh auto;
+}
+
+section#citations li{
+	font-size: 1.1em;
+	line-height: 120%;
+}
+
+
+@media only screen and (max-width: 900px){
+	iframe{
+		height: 60vh;
+	}
+
+	div.display div.overviewImg{
+		width: 100%;
+	}
+}

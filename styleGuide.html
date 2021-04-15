@@ -37,32 +37,44 @@
 	    </nav>
 
 		<div class="contact">
-			<a href="contact.html" class="navBtn">Contact Me</a>
+			<a href="home.html#contact_content" class="navBtn">Contact Me</a>
 		</div>
 	</header>
-
 
 
 	<!-- code for mobile version header -->
     <section class="mobile_header">
         <div class="displayHeader">
             <div class="menu" onclick="showMenu()">
-                <img src="images/menu.png" alt="icon of menu">
+                <img src="images/logo.png" alt="icon of logo as menu">
             </div>
 
-            <div class="mobileLogo">
-                <a href="home.html"><img src="images/logo.png" alt="icon of logo"></a>
-            </div>
         </div>
 
         <ul id="dropDown">
             <li><a href="home.html">HOME</a></li>
-            <li><a href="new_man.html">MEN</a></li>
-            <li><a href="new_woman.html">WOMEN</a></li>
-            <li><a href="about.html">BRAND</a></li>
+            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
+            <li><a href="web.html">WEB DESIGN</a></li>
+            <li><a href="game.html">GAME DEVELOP</a></li>
+            <li><a href="home.html#contact_content">CONTACT ME</a></li>
         </ul>
  
     </section>
+
+
+
+    <div class="styleHead">
+		<p>A template you can use to start building out your own style guides with.</p>
+
+	    <nav class="guide">        
+	        <a href="#interactive_elements">Interactive Elements</a>
+	        <a href="#text_elements">Text Elements</a>
+	        <a href="#combined_element">Combined Element</a>
+	        <a href="#bio_info">Basic Bio Information</a>
+	        <a href="#web_coms">Website Components</a>
+	        <a href="#citations">Citations</a>
+	    </nav>
+	</div>
 
 
 
@@ -136,15 +148,15 @@
 	          </div>
 
 	          <h4>Rendered element</h4>
-	          <div class="button_container">
-	            <a href="#interactive_elements" class="resBtn">
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	<span></span>
-	            	Submit / Reset
-	        	</a>
-	          </div>
+	          <div class="btnbox">
+					<a href="# interactive_elements">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						SEND
+					</a>
+				</div>
 	        </div>
 	        
 	      </section>
@@ -166,7 +178,7 @@
 
 	          <h4>Rendered element:</h4>
 	          <label for="text_input">Text Input:</label>
-	          <input type="text" id="text_input" name="text_input">
+	          <input type="text" id="text_input" name="text_input" placeholder="Place holder">
 	        </div>
 	        
 	      </section>
@@ -289,28 +301,99 @@
 	  	<!-- // TEXT ELEMENTS SECTION -->
 
 
+
+	  	<!-- COMBINED ELEMENTS SECTION // -->
+	    <section id="combined_element">
+	    	<h2>Combined Element</h2>
+
+	    	<section class="element">
+	    		<h3>Main Navigation</h3>
+
+	    		<div class="element_content">
+
+			        <h4>Sample code:</h4>
+			        <div class="codeBox">
+			          	<code>&lt;p class="main_text"&gt;Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:&lt;/p&gt;</code>
+			        </div>
+
+			        <h4>Rendered element:</h4>
+			        <header>
+						<div class="logo">
+							<a href="home.html">
+								<img src="images/logo.png" alt="the logo icon">
+							</a>
+
+							<div class="circle-1"></div>
+							<div class="circle-2"></div>
+							<div class="circle-3"></div>
+						</div>
+
+						<nav class="menu">
+					        <div class="menu_item"><a href="graphic.html" class="textLink">Graphic Design</a></div>
+					        <div class="menu_item"><a href="web.html" class="textLink">Web Design</a></div>
+					        <div class="menu_item"><a href="game.html" class="textLink">Game Develope</a></div>
+					    </nav>
+
+						<div class="contact">
+							<a href="home.html#contact_content" class="navBtn">Contact Me</a>
+						</div>
+					</header>
+
+
+					<!-- code for mobile version header -->
+				    <section class="mobile_header">
+				        <div class="displayHeader">
+				            <div class="menu" onclick="showMenu()">
+				                <img src="images/logo.png" alt="icon of logo as menu">
+				            </div>
+
+				        </div>
+
+				        <ul id="dropDown">
+				            <li><a href="home.html">HOME</a></li>
+				            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
+				            <li><a href="web.html">WEB DESIGN</a></li>
+				            <li><a href="game.html">GAME DEVELOP</a></li>
+				            <li><a href="home.html#contact_content">CONTACT ME</a></li>
+				        </ul>
+				 
+				    </section>
+
+	    		</div>
+	    	</section>
+	    </section>
+	    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
 	  	<!-- PORTFOLIO IDEAS SECTION // -->
-	  	<section id="portfolio_ideas">
-	      <h2>Basic Portfolio Ideas</h2>
+	  	<section id="bio_info">
+	      <h2>Basic Bio Information</h2>
 
 	      <section class="element">
-	        <h3>Who do you want to work for?</h3>
-	        <p> - I would like to work for a game studio that makes indie games.</p>
+	        <h3>About me</h3>
+	        <p> - My name is Meng Zhao. An interactive designer. This is my third year in Simon Fraser University. I am an open-minded, progtessive person who is willing to communicate and learn. Hope I can convey my feelings through visual expressions in my interactive works.</p>
 	      </section>
 
 	      <section class="element">
-	        <h3>What kinds of work might you be interested in doing?</h3>
-	        <p> - Game interface design, character modeling or character design.</p>
+	        <h3>Education</h3>
+	        <p> - Simon Fraser University.<br><br>
+			B.A Interactive Art & Technology, Design Concentration.<br>
+			3rd year student, CGPA: 3.x.<br>
+			Relative courses: Graphic design, Spatial design, Interface design, Multimedia programming, Digital video production, 3D modeling.</p>
 	      </section>
 
 	      <section class="element">
-	        <h3>Who is the audience for your portfolio?</h3>
-	        <p> - Employers of game company that looking for designers.</p>
+	        <h3>Interest of employment</h3>
+	        <p> - I would like to work for internet based companies such as new media companies, independent game studio, and advertising companies.<br><br>
+			I am interested in design related job, including graphic design, interface design and web design. As well as job related to programming like game developing.</p>
 	      </section>
 
 	      <section class="element">
-	        <h3>What about the company interests you most?</h3>
-	        <p> - Nintendo, red candle and mango studio.</p>
+	        <h3>Skills</h3>
+	        <p> - Languages: Chinese (Native), English<br><br>
+			High proficiency in Adobe Illastrator, Adobe Premiere, HTML, CSS, Javascript, Java, Processing<br><br>
+			Familiar in Procreate, Maya, Python, Onshape</p>
 	      </section>
 
 	    </section>
@@ -319,8 +402,8 @@
 
 
 	    <!-- PORTFOLIO COMPONENTS SECTION // -->
-	    <section id="portfolio_coms">
-	      <h2>Branding Components</h2>
+	    <section id="web_coms">
+	      <h2>Website Components</h2>
 
 	      <section class="element">
 	        <h3>Fonts</h3>
@@ -388,7 +471,7 @@
 		</div>
 
 		<div>
-			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="#" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
+			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="citation.html" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
 		</div>
 	</footer>
 

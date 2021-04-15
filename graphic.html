@@ -14,8 +14,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link href="css/styleGuide.css" rel="stylesheet">
-	<link href="css/graphic.css" rel="stylesheet">
+	<link href="css/portfolio.css" rel="stylesheet">
+	<link href="css/detail.css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,25 +45,51 @@
 	</header>
 
 
+
+	<!-- code for mobile version header -->
+    <section class="mobile_header">
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/logo.png" alt="icon of logo as menu">
+            </div>
+
+        </div>
+
+        <ul id="dropDown">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
+            <li><a href="web.html">WEB DESIGN</a></li>
+            <li><a href="game.html">GAME DEVELOP</a></li>
+            <li><a href="home.html#contact_content">CONTACT ME</a></li>
+        </ul>
+ 
+    </section>
+
+
+
 	<section class="project_content">
 		<div class="title">
 			<h2 data-text="Infographic...">Infographic...</h2>
 		</div>
 
+		<div class="mobile_title">
+			<h2>Infographic</h2>
+		</div>
+
 		<div class="display">
-			<div class="overviewImg">
+			<div class="overviewImg" data-aos="fade-right">
 				<img src="images/infogrphic1.jpg" alt="image of infographic">
 
 				<p>Avalanche infographic 1.</p>
 			</div>
 
-			<div class="overviewImg">
+			<div class="overviewImg" data-aos="fade-left">
 				<img src="images/infographic2.png" alt="image of infographic">
 
 				<p>Avalanche infographic 1.</p>
 			</div>
 
-			<div class="textBox">
+			<div class="textBox" data-aos="zoom-out">
 				<div class="overviewText">
 					<div>
 						<h3>CONTEXT</h3>
@@ -84,12 +112,12 @@
 						<p>Comfirm the user. Collect and analyzed data.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/data1.png">
 						<p>Organize the required information into one document.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/data2.png">
 						<p>Select the target audience, the stakeholder, and the purpose of the production.</p>
 					</div>
@@ -102,12 +130,12 @@
 						<p>Brainstorming to generate severl ideas and sketch them out to see the result.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/sketch1.jpg">
 						<p>Sketch out variaty of possibilities for each part, and combine them later.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/sketch2.jpg">
 						<p>Combine the real content with the possible layout as first draft.</p>
 					</div>
@@ -120,12 +148,12 @@
 						<p>Create the digital drafts based on sketches. Get feedback to see does the graphic help users understand the conten.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/firstdraft1.jpg">
 						<p>I get feedback saying the spacing is too crowded and some part’s layout is a bit messy which makes it hard to read.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/firstdraft2.jpg">
 					</div>
 				</div>
@@ -136,12 +164,12 @@
 						<p>Refine the design based on the feedback.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-right">
 						<img src="images/infogrphic1.jpg">
 						<p>I increaced the spacing to fix the readability problem from feedback.</p>
 					</div>
 
-					<div class="imgText">
+					<div class="imgText" data-aos="fade-left">
 						<img src="images/infographic2.png">
 						<p>From feedback vertical layout is easier to read, so I unify both design.</p>
 					</div>
@@ -150,11 +178,11 @@
 			</div>
 
 
-			<div class="textBox">
+			<div class="textBox" data-aos="zoom-out">
 				<div class="overviewText">
 					<div>
 						<h3>Goal and Requirements Oriented</h3>
-						<p class="more">When designing, we first need to identify who the target audience is, which determines the form of the content and the purpose of the visualization. When dealing with people who have no knowledge of the subject, it is important to combine graphics and text as much as possible to help people understand what we are talking about.</p>
+						<p class="more">When designing, we first need to identify who the target audience is, which determines the form of the content and the purpose of the visualization. When dealing with people who have no knowledge of the subject, it is important to <span class="hl">combine graphics and text</span> as much as possible to help people understand what we are talking about.</p>
 
 						<h3>Designing and Decision</h3>
 						<p>At the beginning of the design process, we should make good use of brainstorming to try out a wide range of ideas. Don't be afraid to give multiple possibilities to compare options and make improvements. It's easy to be stuck in a rut with one solution. The same is true in typography, where we can experiment with the process when we're not sure which will work better, landscape or portrait. A visual comparison or asking for feedback can help us make a better choice. </p>
@@ -177,9 +205,16 @@
 		</div>
 
 		<div>
-			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="#" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
+			<p><a href="styleGuide.html" class="textLink">Styly Guide</a> & <a href="citation.html" class="textLink">Citation</a> & <a href="https://github.com/AZ-Meng/339-Final" class="textLink">GitHub</a></p>
 		</div>
 	</footer>
+
+
+	<script src="js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	    AOS.init();
+	</script>
 
 </body>
 </html>
