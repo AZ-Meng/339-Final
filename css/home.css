@@ -137,31 +137,7 @@ section.about h2{
 	padding: 0;
 	display: inline-block;
 	font-size: 3em;
-	/*transition: 0.5s;
-	transform-origin: left;
-	transform: scaleX(0);*/
 }
-
-/*section.about h2[data-scroll="in"]{
-	transform: scaleX(1);
-}
-
-section.about h2:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #E84994;
-	transform-origin: right;
-	transition: 0.5s;
-}
-
-section.about div.title h2[data-scroll="in"]:before{
-	transform: scaleX(0);
-	transition-delay: 0.5s;
-}*/
 
 section.about div.content{
 	width: 60%;
@@ -484,7 +460,6 @@ section.contact div.right div{
 		display: none;
 	}
 
-
 	section.mobile_cover{
 		display: block;
 		width: 80%;
@@ -532,6 +507,10 @@ section.contact div.right div{
 	}
 
 	section.mobile_cover h2{
+		font-size: 1em;
+	}
+
+	section.about p{
 		font-size: 1em;
 	}
 }
