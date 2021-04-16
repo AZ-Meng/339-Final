@@ -671,4 +671,8 @@ footer div h4, footer div p{
 	div.steps div.imgText{
 		width: 80%;
 	}
+
+	div.imgBox{
+		width: 80%;
+	}
 }
