@@ -149,7 +149,7 @@
 
 	          <h4>Rendered element</h4>
 	          <div class="btnbox">
-					<a href="# interactive_elements">
+					<a href="#interactive_elements">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -313,7 +313,29 @@
 
 			        <h4>Sample code:</h4>
 			        <div class="codeBox">
-			          	<code>&lt;p class="main_text"&gt;Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:&lt;/p&gt;</code>
+			          	<code>
+			          		&lt;header&gt; <br>&nbsp;
+								&lt;div class="logo"&gt; <br>&nbsp; &nbsp;
+									&lt;a href="home.html"&gt; <br>&nbsp; &nbsp; &nbsp;
+										&lt;img src="images/logo.png" alt="the logo icon"&gt; <br>&nbsp; &nbsp;
+									&lt;/a&gt; <br><br>&nbsp; &nbsp;
+
+									&lt;div class="circle-1"&gt;&lt;/div&gt; <br>&nbsp; &nbsp;
+									&lt;div class="circle-2"&gt;&lt;/div&gt; <br>&nbsp; &nbsp;
+									&lt;div class="circle-3"&gt;&lt;/div&gt; <br>&nbsp;
+								&lt;/div&gt; <br> <br>&nbsp;
+
+								&lt;nav class="menu"&gt; <br>&nbsp; &nbsp;
+							        &lt;div class="menu_item"&gt;&lt;a href="graphic.html" class="textLink"&gt;Graphic Design&lt;/a>&lt;/div&gt; <br>&nbsp; &nbsp;
+							        &lt;div class="menu_item"&gt;&lt;a href="web.html" class="textLink"&gt;Web Design&lt;/a>&lt;/div&gt; <br>&nbsp; &nbsp;
+							        &lt;div class="menu_item"&gt;&lt;a href="game.html" class="textLink"&gt;Game Develope&lt;/a>&lt;/div&gt; <br>&nbsp;
+							    &lt;/nav&gt; <br> <br>&nbsp;
+
+								&lt;div class="contact"&gt; <br>&nbsp; &nbsp;
+									&lt;a href="home.html#contact_content" class="navBtn"&gt;Contact Me&lt;/a&gt; <br>&nbsp;
+								&lt;/div&gt; <br>
+							&lt;/header&gt;
+			          	</code>
 			        </div>
 
 			        <h4>Rendered element:</h4>
@@ -343,13 +365,13 @@
 					<!-- code for mobile version header -->
 				    <section class="mobile_header">
 				        <div class="displayHeader">
-				            <div class="menu" onclick="showMenu()">
+				            <div class="menu" onclick="showMenu2()">
 				                <img src="images/logo.png" alt="icon of logo as menu">
 				            </div>
 
 				        </div>
 
-				        <ul id="dropDown">
+				        <ul id="dropDown_navi">
 				            <li><a href="home.html">HOME</a></li>
 				            <li><a href="graphic.html">GRAPHIC DESIGN</a></li>
 				            <li><a href="web.html">WEB DESIGN</a></li>

@@ -281,7 +281,53 @@ ul#dropDown a{
 
 ul#dropDown a:hover{
 	color: white;
-	/*font-style: italic;*/
+}
+
+
+
+/*differnciate drop down menu effect for combined element*/
+ul#dropDown_navi{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#dropDown_navi>li{
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	transition: all 0.5s;
+}
+
+ul#dropDown_navi>li:hover{
+	color: white;
+	font-style: italic;
+}
+
+ul#dropDown_navi>li:nth-child(1):hover,
+ul#dropDown_navi>li:nth-child(3):hover,
+ul#dropDown_navi>li:nth-child(5):hover{
+	background-color: #02C8ED;
+}
+
+ul#dropDown_navi>li:nth-child(2):hover,
+ul#dropDown_navi>li:nth-child(4):hover{
+	background-color: #E84994;
+}
+
+ul#dropDown_navi a{
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+}
+
+ul#dropDown_navi a:hover{
+	color: white;
 }
 
 
@@ -525,9 +571,6 @@ a.imgLink img:hover{
 
 
 /*combined element part*/
-section#combined_element{
-	border: 1px solid white;
-}
 div.element_content header{
 	width: 100%;
 }
